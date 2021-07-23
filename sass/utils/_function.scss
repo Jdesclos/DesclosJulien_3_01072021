@@ -12,3 +12,11 @@
     $darker:hsl($hue,$sat,$light);
     @return $darker;
 }
+@keyframes fill_heart{
+    0% {
+        background-size: 100% 0%;
+      }
+      100% {
+        background-size: 100% 100%;
+      }
+}

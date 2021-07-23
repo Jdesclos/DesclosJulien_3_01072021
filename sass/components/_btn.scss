@@ -8,4 +8,41 @@
         color: $white;
         font-size: map-get($map: $font_size, $key: litle );
     }
+    &:hover{
+        opacity: 0.8;
+        box-shadow: map-get($map: $box_shadow, $key: shadow_hover );
+    }
+}
+.heart{
+position: relative;
+color: $black;
+font-size: 21px;
+z-index: 10;
+color: transparent;
+z-index: 15;
+font-size: 21px;
+border: none;
+background-color: white;
+    & .fas{
+        position: absolute;
+        color: transparent;
+        right: 15px;
+    }
+    & .far{
+        color:black;
+        position: absolute;
+        right: 15px;
+    }
+    &:hover .fas{
+        background:map-get($map: $gradiant, $key:heart );
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-repeat: no-repeat ;
+        background-position: bottom;
+        animation: fill_heart 1s ease;
+
+    }
+    &:hover .far{
+        color: transparent;
+    }
 }

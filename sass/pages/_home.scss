@@ -24,9 +24,15 @@
 .howto{
         @include flex_column;
         padding: map-get($map: $padding_contain, $key:padding_on );
+        @media  screen and (min-width: map-get($breakpoint, desktop)) {
+           align-items: center;
+        }
     &__list{
         @include flex_column;
         padding-left: 17px;
+        @media  screen and (min-width: map-get($breakpoint, desktop)) {
+            width: 50%;
+        }
     }
     & li {
         display: flex;
@@ -64,7 +70,7 @@
     @include flex_column;
     padding: map-get($map: $padding_contain, $key: padding_on );
     background-color: map-get($map: $background_color, $key: background_element );
-    &__header{
+    &__heading{
         font-size: map-get($map: $font_size, $key: title );
     }
     &__contain{
@@ -80,6 +86,7 @@
         box-shadow: map-get($map: $box_shadow, $key: shadow_element);
         border-radius: $border-radius_total;
         @include desktop-only;
+        z-index: 10;
     }
     &__img > img{
         max-height: 175px;
@@ -96,9 +103,11 @@
         background-color: $color_tertiary;
         color: darker($color_tertiary);
         padding: 9px 12px;
+        z-index: 1;
     }
     &__caption{
-        padding-left: 15px;
+        padding:0px 15px;
+        @include flex_row;
         &__heading{
             margin: 19px 0px 5px;
             font-size: map-get($map: $font_size, $key: litle);
@@ -110,35 +119,6 @@
             color: $black;
             margin: 0px;
         }
-        &__empty{
-            position: absolute;
-        right: 25px;
-        bottom: 33px;
-        color: $black;
-        font-size: 21px;
-        z-index: 10;
-            &:active{
-            display: none;
-            }
-            &:hover{
-            display: none;
-           } 
-        }
-        &__full{
-            position: absolute;
-        right: 25px;
-        bottom: 33px;
-        display: none;
-        z-index: 15;
-        font-size: 21px;
-            &:active{
-                 display: inline-block;
-                 background:map-get($map: $gradiant, $key:heart );
-            }
-            &:hover {
-                display: inline-block;
-                background:map-get($map: $gradiant, $key:heart );
-            }
-        }
+        
     }
 }

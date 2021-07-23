@@ -2,6 +2,7 @@ $color_primary: #9356DC;
 $color_secondary: #FF79DA ;
 $color_tertiary: #99E2D0;
 $color_shadow:#eaeaea;
+$shadow_darker:#bbbbbb;
 $color_icon_howto:#7e7e7e;
 $white: white;
 $black: black;
@@ -9,7 +10,8 @@ $border-radius_total: 25px;
 $border-radius_circle:50%;
 $box_shadow: (
     shadow_header:5px 5px 5px 0px $color_shadow,
-    shadow_element:5px 5px 5px $color_shadow
+    shadow_element:5px 5px 5px 0px $color_shadow,
+    shadow_hover:5px 5px 5px 0px $shadow_darker
 );
 $background_color: (
     home_map:#eaeaea,
@@ -24,7 +26,8 @@ $color_line:(
 $font-size:(
     litle: 1rem,
     title: 2rem,
-    very_litle:0.8rem
+    very_litle:0.8rem,
+    footer_title:1.5rem
 );
 $breakpoint:(
     mobile:414px,
