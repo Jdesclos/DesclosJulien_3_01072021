@@ -1,0 +1,26 @@
+@mixin flex_column {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin flex_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@mixin mobile-only {
+    @media screen and (max-width: map-get($map: $breakpoint, $key: mobile )){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@mixin desktop-only {
+    @media screen and (min-width: map-get($map: $breakpoint, $key:desktop )) {
+        max-width: 335px;
+    }
+}
+@mixin border-radius_half {
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
+}

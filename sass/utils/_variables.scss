@@ -1,0 +1,41 @@
+$color_primary: #9356DC;
+$color_secondary: #FF79DA ;
+$color_tertiary: #99E2D0;
+$color_shadow:#eaeaea;
+$color_icon_howto:#7e7e7e;
+$white: white;
+$black: black;
+$border-radius_total: 25px;
+$border-radius_circle:50%;
+$box_shadow: (
+    shadow_header:5px 5px 5px 0px $color_shadow,
+    shadow_element:5px 5px 5px $color_shadow
+);
+$background_color: (
+    home_map:#eaeaea,
+    background_element:#f6f6f6,
+    background_card:white,
+    background_footer:#353535
+);
+$color_line:(
+    color_map_line:#353535,
+    color_footer: $white
+);
+$font-size:(
+    litle: 1rem,
+    title: 2rem,
+    very_litle:0.8rem
+);
+$breakpoint:(
+    mobile:414px,
+    tablette:834px,
+    desktop:1366px
+);
+$padding_contain:(
+    padding_on: 60px 20px,
+    padding_off: 60px 0px
+);
+$gradiant:(
+    btn:linear-gradient($color_secondary, $color_primary),
+    heart:-webkit-linear-gradient($color_primary, $color_secondary)
+);

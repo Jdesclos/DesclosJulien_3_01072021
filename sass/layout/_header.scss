@@ -1,0 +1,5 @@
+header{
+    text-align: center;
+    box-shadow: map-get($map: $box_shadow, $key: shadow_header) ;
+    padding: 22px 0px 12px 0px;
+}

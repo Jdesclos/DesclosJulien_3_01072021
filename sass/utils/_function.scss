@@ -1,0 +1,14 @@
+@function pastel ($clr){
+    $hue:hue($clr);
+    $sat:100%;
+    $light: 96.47%;
+    $pastel:hsl($hue,$sat,$light);
+    @return $pastel;
+}
+@function darker ($clr){
+    $hue:hue($clr);
+    $sat:100%;
+    $light: 26.25%;
+    $darker:hsl($hue,$sat,$light);
+    @return $darker;
+}

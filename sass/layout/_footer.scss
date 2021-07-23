@@ -1,0 +1,30 @@
+footer{
+    background-color:map-get($map: $background_color, $key:background_footer ) ;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    color: $white;
+    & h2{
+         font-family: 'Shrikhand', cursive;
+         font-size: map-get($map: $font_size, $key:litle );
+         @media screen and (max-width:map-get($map: $breakpoint, $key:mobile )) {
+            margin-bottom: 10px;
+        }
+    }     
+    @include mobile-only;
+    & ul{
+        @include flex_row;
+        padding-left: 0px;
+        @include mobile-only;
+        & li {
+            color: $white;
+            font-size: map-get($map: $font_size, $key: litle );
+            @media screen and (max-width:map-get($map: $breakpoint, $key:mobile )) {
+                margin-top: 15px;
+            }
+        }
+        & i {
+            margin-right: 12px;
+        }
+    }
+}
