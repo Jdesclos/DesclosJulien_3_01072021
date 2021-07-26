@@ -5,7 +5,7 @@ footer{
     padding: 25px;
     color: $white;
     & h2{
-         font-family: 'Shrikhand', cursive;
+         font-family: map-get($map: $font_family, $key:logo_headmenu ), cursive;
          font-size: map-get($map: $font_size, $key:footer_title );
          @media screen and (max-width:map-get($map: $breakpoint, $key:mobile )) {
             margin-bottom: 10px;

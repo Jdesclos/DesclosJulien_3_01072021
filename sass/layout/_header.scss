@@ -1,5 +1,7 @@
 header{
-    text-align: center;
+    align-items: center;
     box-shadow: map-get($map: $box_shadow, $key: shadow_header) ;
     padding: 22px 0px 12px 0px;
+    display: flex;
+    justify-content: space-around;
 }

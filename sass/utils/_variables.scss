@@ -4,6 +4,7 @@ $color_tertiary: #99E2D0;
 $color_shadow:#eaeaea;
 $shadow_darker:#bbbbbb;
 $color_icon_howto:#7e7e7e;
+$color_icon_back:#353535;
 $white: white;
 $black: black;
 $border-radius_total: 25px;
@@ -24,10 +25,13 @@ $color_line:(
     color_footer: $white
 );
 $font-size:(
-    litle: 1rem,
     title: 2rem,
+    menu_title:1.3rem,
+    litle: 1rem,
     very_litle:0.8rem,
-    footer_title:1.5rem
+    commentary:0.6rem,
+    footer_title:1.5rem,
+    back_arrow:1.5rem
 );
 $breakpoint:(
     mobile:414px,
@@ -41,4 +45,8 @@ $padding_contain:(
 $gradiant:(
     btn:linear-gradient($color_secondary, $color_primary),
     heart:-webkit-linear-gradient($color_primary, $color_secondary)
+);
+$font_family:(
+    main_font:'Roboto',
+    logo_headmenu:'shrikhand'
 );
