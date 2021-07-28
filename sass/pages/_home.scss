@@ -135,11 +135,14 @@
     background-color: #7e7e7e5e;
     animation: loading_spinner 3s linear;
     opacity: 0%;
-    align-items: center;
-    justify-content: center;
+    z-index: -99;
     & > i{
+        position: absolute;
+        top: 50%;
+        left: 40%;
         font-size: 5rem;
         color: white;
         animation: spin 3s cubic-bezier(.08,.72,1,.32);
+        display: inline-block;
     }
 }

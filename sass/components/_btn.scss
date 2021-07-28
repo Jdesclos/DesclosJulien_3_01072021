@@ -4,6 +4,7 @@
     border-radius: 25px;
     border: none;
     box-shadow: map-get($map: $box_shadow, $key:shadow_element );
+    z-index: 10;
     & a{
         color: $white;
         font-size: map-get($map: $font_size, $key: litle );
