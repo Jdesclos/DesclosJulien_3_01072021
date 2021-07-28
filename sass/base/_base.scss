@@ -1,6 +1,5 @@
 body{
     font-family: map-get($map: $font_family, $key: main_font ), sans-serif;
-    max-width: 1440px;
     margin: auto;
     & a {
         text-decoration: none;

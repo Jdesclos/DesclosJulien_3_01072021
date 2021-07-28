@@ -58,11 +58,33 @@
         @include mobile-only;
         padding: 0px 15px;
         z-index: 10;
+        @media (min-width: 690px) and (max-width: map-get($map: $breakpoint, $key: tablette )){
+            flex-direction: column;
+            align-items: center;
+        }
+        & > :nth-child(1){
+            animation: pop 2s ease;
+            animation-fill-mode: forwards;
+        }
+        & > :nth-child(2){
+            animation: pop 2s ease;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        & > :nth-child(3){
+            animation: pop 2s ease;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
         &__epd{
             width: 100%;
             max-width: 30%;
+            transform: scale(0);
             @media screen and(max-width: map-get($map: $breakpoint, $key: mobile)) {
                 max-width: 100%;
+            }
+            @media (min-width: 690px) and (max-width: map-get($map: $breakpoint, $key: tablette )){
+                max-width: 60%;
             }
             & ul {
                 padding: 0px;
@@ -73,13 +95,21 @@
                 border-radius: $border-radius_total;
                 margin-top: 15px;
                 display: flex;
-                &:hover .check{
+                background-position: right;
+                overflow: hidden;
+                &:active .check i{
                     display: inline-block;
+                    animation: slide_left 2s ease;
                 }
+                
             }
             & h3 {
                 font-size: map-get($map: $font_size, $key: very_litle );
                 margin: 0px 0px 8px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 70%;
             }
             & p {
                 font-size: map-get($map: $font_size, $key: commentary );
@@ -87,6 +117,10 @@
                 justify-content: space-between;
                 align-items: center;
                 margin: 0px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 70%;
             }
             & span {
                 font-weight: bold;
@@ -102,17 +136,29 @@
                 flex: 2;
                 padding: 20px 15px 15px;
             }
-            & .check{
+            & .check {
+                align-items: center;
+                display: flex;
+            }
+            & .check i{
                 display: none;
                 background-color: $color_tertiary;
                 border-top-right-radius: $border-radius_total;
                 border-bottom-right-radius: $border-radius_total;
+            }
+            & .check span{
+               font-size: map-get($map: $font_size, $key: commentary );
+               margin-right: 25px;
             }
         }
     }
     & .commander{
         justify-content: center;
         display: flex;
+        animation: pop 2s ease;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+        transform: scale(0);
         &__btn {
             max-width: 190px;
             display: inline-block;
