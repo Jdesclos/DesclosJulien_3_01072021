@@ -139,10 +139,12 @@
     & > i{
         position: absolute;
         top: 50%;
-        left: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transform-origin: center;
         font-size: 5rem;
         color: white;
-        animation: spin 3s cubic-bezier(.08,.72,1,.32);
+        animation: spin 3s ease-in-out;
         display: inline-block;
     }
 }
