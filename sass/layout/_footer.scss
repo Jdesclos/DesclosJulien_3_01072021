@@ -10,13 +10,13 @@ footer{
          @media screen and (max-width:map-get($map: $breakpoint, $key:mobile )) {
             margin-bottom: 10px;
         }
-    }     
+    }
     @include mobile-only;
-    & ul{
+    & .footer__list{
         @include flex_row;
         padding-left: 0px;
         @include mobile-only;
-        & li{
+        & li {
             margin-bottom: 15px;
         }
         & a {
