@@ -16,7 +16,9 @@ footer{
         @include flex_row;
         padding-left: 0px;
         @include mobile-only;
-        margin-bottom: 15px;
+        & li{
+            margin-bottom: 15px;
+        }
         & a {
             color: $white;
             font-size: map-get($map: $font_size, $key: litle );
