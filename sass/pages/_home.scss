@@ -111,9 +111,13 @@
         height: 100%;
         @include border-radius_half;
     } 
+    &__head-caption{
+        @include flex_row;
+        align-items: center;
+    }
     &__caption{
         padding:0px 15px;
-        @include flex_row;
+        @include flex_column;
         &__heading{
             margin: 19px 0px 5px;
             font-size: map-get($map: $font_size, $key: litle);
@@ -132,19 +136,20 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #7e7e7e5e;
-    animation: loading_spinner 3s linear;
+    background-color: #2b2a2a5e;
+    animation: loading_spinner 3s ease-out;
     opacity: 0%;
-    z-index: -99;
-    & > i{
+    z-index: -1;
+    & > span{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        transform-origin: center;
         font-size: 5rem;
         color: white;
-        animation: spin 3s ease-in-out;
         display: inline-block;
+        & i{
+            animation: spin 3s ease-in-out;
+        }
     }
 }

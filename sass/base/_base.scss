@@ -2,10 +2,10 @@ body{
     font-family: map-get($map: $font_family, $key: main_font ), sans-serif;
     margin: auto;
     justify-content: center;
-    & a {
-        text-decoration: none;
-    }
     & li {
         list-style: none;
     }
+}
+a {
+    text-decoration: none;
 }
