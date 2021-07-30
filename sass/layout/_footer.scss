@@ -10,6 +10,9 @@ footer{
          @media screen and (max-width:map-get($map: $breakpoint, $key:mobile )) {
             margin-bottom: 10px;
         }
+        @media screen and (min-width:map-get($map: $breakpoint, $key: mobile)){
+            text-align: center;
+        }
     }
     @include mobile-only;
     & .footer__list{

@@ -97,17 +97,10 @@
                 display: flex;
                 background-position: right;
                 overflow: hidden;
-                @media screen and (min-width:1366px){
-                &:active .check>i{
+                &:hover .check>i{
                     display: inline-block;
                     animation: slide_left 2s ease;
                 }
-            }
-            @media screen and (max-width:1365px) {
-                &:hover .check>i{
-                    animation: slide_left 2s ease;
-                }
-            }
             }
             & h3 {
                 font-size: map-get($map: $font_size, $key: very_litle );
@@ -119,7 +112,6 @@
             }
             & p {
                 font-size: map-get($map: $font_size, $key: commentary );
-                display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin: 0px;
