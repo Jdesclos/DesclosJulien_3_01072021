@@ -46,10 +46,14 @@
         padding: 0px 15px;
         align-items: center;
         z-index: 10;
+        & h1 {
+            font-size: map-get($map: $font_size, $key: title );
+        }
         &__heart{
             display: inline-block;
             & i {
-                top: -7px
+                top: -7px;
+                margin-left:  15px;
             }
         }
     }
@@ -101,6 +105,10 @@
                     display: inline-block;
                     animation: slide_left 2s ease;
                 }
+                &:hover .check>span{
+                    display: inline-block;
+                    animation: slide_left 2s ease;
+                }
             }
             & h3 {
                 font-size: map-get($map: $font_size, $key: very_litle );
@@ -108,7 +116,6 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
-                width: 70%;
             }
             & p {
                 font-size: map-get($map: $font_size, $key: commentary );
@@ -118,13 +125,12 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
-                width: 70%;
             }
             & span {
                 font-weight: bold;
             }
             & i{
-                padding: 25px 20px;
+                padding: 28px 20px;
                 border-top-right-radius: $border-radius_total;
                 border-bottom-right-radius: $border-radius_total;
                 color: $white;
@@ -133,6 +139,9 @@
             & .detail_plat{
                 flex: 2;
                 padding: 20px 15px 15px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
             }
             & .check {
                 align-items: center;

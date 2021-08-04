@@ -31,6 +31,7 @@ footer{
         }
         & i {
             margin-right: 12px;
+            font-size: map-get($map: $font_size, $key: litle );
         }
     }
 }
