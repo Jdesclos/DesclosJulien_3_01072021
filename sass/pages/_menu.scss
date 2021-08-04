@@ -154,7 +154,7 @@
                 border-bottom-right-radius: $border-radius_total;
             }
             & .check span{
-               font-size: map-get($map: $font_size, $key: commentary );
+               font-size: map-get($map: $font_size, $key: very_litle );
                margin-right: 25px;
             }
         }
