@@ -21,6 +21,7 @@ footer{
         @include mobile-only;
         & li {
             margin-bottom: 15px;
+            font-size: map-get($map: $font_size, $key: litle );
         }
         & a {
             color: $white;
